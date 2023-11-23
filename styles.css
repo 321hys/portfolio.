@@ -1,0 +1,188 @@
+
+#dogs{
+    width: 80rem;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+#About{
+    width: 80rem;
+    margin: 1rem;
+    padding: 1rem;
+   
+}
+
+#songs{
+    width: 80rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.image-class {
+    display: flex;
+    top: -10px; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+  
+  .centered-title {
+    margin: 50px;
+    padding: 0px;
+    justify-content:right;
+    text-align: center;
+    top: 3rem; 
+    color:rgb(127, 74, 14);
+}
+
+nav{
+    margin-top: 10px;
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(13, 40, 65);
+    color:azure;
+    border: 5px solid #7F4A0E;
+}
+
+nav a{
+    font-size: 17px;
+    text-decoration: none;
+    color: azure;
+    padding: 0 30px;
+}
+
+nav ul{ 
+    list-style-type: none; 
+}
+
+nav ul li{ 
+    display: inline-block; 
+    position: relative; 
+}
+
+nav ul li ul { 
+    background-color: rgb(13, 40, 65);
+    width: 300px;
+	position: absolute; /* put the sub menu in a separate layer */
+	z-index: 999; /* make sure the sub menu is not hidden behind other elements */
+	text-align: left;
+    
+}
+
+nav ul li ul li a{ /* styles for the <a> in the sub menu */
+    padding: 10px;
+    display: block; 
+}
+
+nav ul li ul li:hover a:hover{ 
+    color: rgb(13, 40, 65);
+    background-color: gray;
+}
+
+nav ul li ul { 
+    display: none; 
+}
+
+nav ul li:hover ul{
+    display: block; 
+}
+
+.about {
+    color:rgb(127, 74, 14);
+    font-size: 40px;
+}
+.aboutmeletter{
+    font-size: 20px;
+
+}
+.mypic{
+    display: block; 
+    
+}
+figcaption{ color:#7F4A0E;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container p {
+    flex: 1; 
+    text-align: left;
+  }
+  
+  .container img {
+    flex-shrink: 0; /* Prevent images from being reduced in size */
+    margin-left: 10px;
+  }
+
+  .center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Set the overall height based on the viewport height*/
+  }
+
+  .dogtable{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 3px solid rgb(13, 40, 65); 
+    padding: 8px; 
+    text-align: center; 
+    background-color: #f2f2f2; 
+     
+  }
+
+  table {
+    border-collapse: collapse; /* 셀 테두리를 하나로 합칩니다 */
+    width: 100%; /* 테이블의 너비 */
+  }
+  
+  th, td {
+    border: 2px solid #7F4A0E; /* 셀에 검은색 테두리를 적용 */
+    padding: 8px; /* 셀 안쪽의 패딩 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+  }
+  
+
+.song{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Copyright{
+    text-align: center;
+    background-color: rgb(13, 40, 65);
+    color:azure
+}
+
+.column-1{
+    float: left;
+    width: 50%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear:both;
+    
+}
+
+.responsive{
+    max-width: 100%;
+    height:auto;
+}
+
+/* This is my first website using html and css
+Wed Nov 22 7:30 2023 */
+
