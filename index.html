@@ -5,6 +5,7 @@
       <meta charset="UTF-8">
       <meta name = "viewport" content="width= device width, initial scale=1.0">
       <title>Welcome to my webpage</title>
+      <script defer src="main.js"></script>
      <link rel = "stylesheet" href="styles.css">
   </head>
   <body class="responsive">
@@ -24,6 +25,13 @@
       </header>
          <br>
       <main>
+          <div class="container">
+            <div class="button">
+              <input type="button" value="day" id="dayButton">
+              <input type="button" value="night" id="nightButton">
+            </div>
+          </div>
+
           <section id="About">
               <h2 class="about">ABOUT ME : Yeonseo Hong</h2>
             <div class="container">
@@ -95,13 +103,25 @@
                     </td>
                   </tr>
                 </table>
-          </section>
+          <button id="btn-alert"> CLick me for an alert</button> 
+
+          <button id ="hoverBtn">Hover Over Me</button>
+
+          <button id ="btn-counter">Click Me</button>
+
+          <p id="txt-counter">Number: 1</p>
+          
+          <ol id="numbers"></ol>
       </main>
       <footer>
         <div class="Copyright">
-          <p>&copy; Copyright Yeonseo Hong 000846163, 2023</p>
+          <p>&copy; Copyright Yeonseo Hong 000846163, 2023. <span id="currentyear"></span></p>
         </div>
       </footer>
+      <script>
+        var currentyear =new Date().getFullYear (2023) ;
+        document. getElementById("currentYear") .textContent = currentYear;
+      </script>
   </body>
   </html>
   
