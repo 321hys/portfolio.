@@ -26,13 +26,7 @@
       </header>
          <br>
       <main>
-          <div class="container">
-            <div class="button">
-              <input type="button" value="day" id="dayButton">
-              <input type="button" value="night" id="nightButton">
-            </div>
-          </div>
-
+         <button id="btn-alert">Click me for an alert</button>
           <section id="About">
               <h2 class="about">ABOUT ME : Yeonseo Hong</h2>
             <div class="container">
@@ -105,12 +99,25 @@
                   </tr>
                 </table>
           </section>
-      </main>
-      <footer>
-        <div class="Copyright">
-          <p>&copy; Copyright Yeonseo Hong 000846163, 2023</p>
-        </div>
-      </footer>
-  </body>
-  </html>
+          
+           <button id="hoverBtn">Hover Over Me</button>
+          
+           <button id="btn-increment">Click Me</button>
+        
+           <p id="txt-counter">Number: 1</p>
+          
+           <ol id="numbers"></ol>
+        
+          
+           <footer>
+               <p>&copy; Copyright Yeonseo Hong 000846163, 2023. <span id="currentYear"></span></p>
+           </footer>
+           <script>
+               // alert('Hello,again!');
+               var currentYear = new Date().getFullYear(2023);
+               document.getElementById("currentYear").textContent = currentYear;
+           </script>
+       </body>
+       </html>
+        
   

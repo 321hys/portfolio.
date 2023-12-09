@@ -1,14 +1,3 @@
-document.getElementById('dayButton').addEventListener('click', function() {
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-});
- 
-document.getElementById('nightButton').addEventListener('click', function() {
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-});
-
-
 document.addEventListener('DOMContentLoaded', function () {
     // Alert Button
     var alertButton = document.getElementById('btn-alert');
