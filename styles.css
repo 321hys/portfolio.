@@ -1,188 +1,327 @@
-
+/* All styling */
+* { 
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+ 
+/* Header styles */
+header {
+    padding-top: 30px;
+    padding-left: 10px;
+}
+ 
+/* Menu styles */
+menu {
+    float: right;
+    padding-right: 30px;
+    font-size: 60px;
+    cursor: pointer;
+    color: rgb(1, 35, 71);
+}
+ 
+/* Body styles */
+body {
+    background-color: rgb(255, 255, 255);
+}
+ 
+ 
+/* Sidebar navigation */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(61, 127, 251);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+ 
+/* Sidebar */
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+ 
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+ 
+/* Sidebar close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+ 
+/* Main content area */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+ 
+/* Responsive design for small height screens */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+ 
+/* Heading styles */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(255, 115, 140);
+    letter-spacing: 5px;
+}
+ 
+ 
+h2 {
+    background-color: rgb(166, 230, 219);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+ 
+ 
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(122, 171, 91);
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+ 
+/* Grid layout */
+#grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+/* Profile section */
+#profile {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+/*mainlogo section */
+#mainlogo figure img {
+    width: 20%;
+}
+ 
+/* Grid item styles */
+#grid > div {
+    width: 60%;
+}
+ 
+/* Grid images */
+#grid figure img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    #grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    #grid figure {
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+    }
+ 
+    #grid figure img {
+        max-width: 326px;
+        height: auto;
+    }
+ 
+    #mainlogo figure img {
+        width: 50%;
+        margin-left: 105px; /* Or the desired width */
+        /* Other relevant styles */
+    }
+}
+ 
+.button {
+    align-items: center;
+}
+ 
+.button input[type="button"],
+.button button {
+    padding: 10px 20px; /* 버튼 안의 여백 설정 */
+    font-size: 18px; /* 원하는 폰트 크기 설정 */
+    background-color: rgb(229, 237, 162);
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f7f4d2, #bdfcf8);
+    box-shadow: none;
+}
+ 
+.button input[type="button"]:hover,
+.button button:hover {
+/* 호버 시 그라데이션 색상 변경 */
+background: linear-gradient(to right, #bdfcf8, #f4d8ec);
+}
+ 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
+/* profile item images */
+.profile-item img {
+    min-width: auto;
+    min-height: auto;
+    }
+ 
+/* Work item images */
+.work-item {
+    flex: 0.0 calc(33.33% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+ 
+/* Work item images */
+.work-item figure img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    min-width: 200px;
+    min-height: auto;
+    }
+ 
+ 
+/* YouTube section */
+#youtube { /* Styles for YouTube section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ 
+ 
+/* Table styles */
+table {
+    color: rgb(89, 148, 103);
+    border: 1px dashed rgb(178, 178, 249);
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    border-collapse: collapse;
+}
+ 
+th,
+td {
+    padding: 12px 20px;
+}
+ 
+th {
+    border-bottom: 1px solid rgb(204, 166, 231);
+}
+ 
+td {
+    border-bottom: 1px solid rgb(178, 178, 249);
+    font-size: 18px;
+}
+ 
+ 
+#mainlogo {
+    display: inline;
+}
+ 
+figcaption,
+details {
+    text-align: center;
+}
+ 
+/* Paragraph styles */
+p {
+    padding: 10px;
+    text-align: center;
+}
+ 
+/* Flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+ 
+ 
+.work-item img {
+    width: 400px; 
+    height: auto; 
+    margin: 10px;
+}
+ 
+.work-item img:hover {
+    transform: scale(1.3); 
+}
+ 
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+ 
+/* Figure caption and details */
+figcaption,
+details {
+    font-family: 'Noto Serif KR', serif;
+    }
+}
+ 
+/* Footer styles */
+footer {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 0 25px;
+    line-height: 30px;
+    color: #8e8f8a;
+    border-top: 1px solid #dee5e7;
+    background-color: #f2f2f2;
+    text-align: center;
+}
 #dogs{
     width: 80rem;
     margin: 1rem;
     padding: 1rem;
     
 }
-
 #About{
     width: 80rem;
     margin: 1rem;
     padding: 1rem;
    
 }
-
 #songs{
     width: 80rem;
     margin: 1rem;
     padding: 1rem;
 }
-
-.image-class {
-    display: flex;
-    top: -10px; 
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    
-}
-  
-  .centered-title {
-    margin: 50px;
-    padding: 0px;
-    justify-content:right;
-    text-align: center;
-    top: 3rem; 
-    color:rgb(127, 74, 14);
-}
-
-nav{
-    margin-top: 10px;
-    padding: 1px;
-    text-align: center;
-    background-color: rgb(13, 40, 65);
-    color:azure;
-    border: 5px solid #7F4A0E;
-}
-
-nav a{
-    font-size: 17px;
-    text-decoration: none;
-    color: azure;
-    padding: 0 30px;
-}
-
-nav ul{ 
-    list-style-type: none; 
-}
-
-nav ul li{ 
-    display: inline-block; 
-    position: relative; 
-}
-
-nav ul li ul { 
-    background-color: rgb(13, 40, 65);
-    width: 300px;
-	position: absolute; /* put the sub menu in a separate layer */
-	z-index: 999; /* make sure the sub menu is not hidden behind other elements */
-	text-align: left;
-    
-}
-
-nav ul li ul li a{ /* styles for the <a> in the sub menu */
-    padding: 10px;
-    display: block; 
-}
-
-nav ul li ul li:hover a:hover{ 
-    color: rgb(13, 40, 65);
-    background-color: gray;
-}
-
-nav ul li ul { 
-    display: none; 
-}
-
-nav ul li:hover ul{
-    display: block; 
-}
-
-.about {
-    color:rgb(127, 74, 14);
-    font-size: 40px;
-}
-.aboutmeletter{
-    font-size: 20px;
-
-}
-.mypic{
-    display: block; 
-    
-}
-figcaption{ color:#7F4A0E;
-
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .container p {
-    flex: 1; 
-    text-align: left;
-  }
-  
-  .container img {
-    flex-shrink: 0; /* Prevent images from being reduced in size */
-    margin-left: 10px;
-  }
-
-  .center-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh; /* Set the overall height based on the viewport height*/
-  }
-
-  .dogtable{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-collapse: collapse; 
-    width: 100%; 
-    border: 3px solid rgb(13, 40, 65); 
-    padding: 8px; 
-    text-align: center; 
-    background-color: #f2f2f2; 
-     
-  }
-
-  table {
-    border-collapse: collapse; /* 셀 테두리를 하나로 합칩니다 */
-    width: 100%; /* 테이블의 너비 */
-  }
-  
-  th, td {
-    border: 2px solid #7F4A0E; /* 셀에 검은색 테두리를 적용 */
-    padding: 8px; /* 셀 안쪽의 패딩 */
-    text-align: center; /* 텍스트를 가운데 정렬 */
-  }
-  
-
-.song{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Copyright{
-    text-align: center;
-    background-color: rgb(13, 40, 65);
-    color:azure
-}
-
-.column-1{
-    float: left;
-    width: 50%;
-}
-
-.row::after{
-    content: "";
-    display: table;
-    clear:both;
-    
-}
-
-.responsive{
-    max-width: 100%;
-    height:auto;
-}
-
-/* This is my first website using html and css
-Wed Nov 22 7:30 2023 */
-
